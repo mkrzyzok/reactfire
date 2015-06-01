@@ -1,3 +1,20 @@
+;(function (root, factory) {
+  "use strict";
+  if (typeof define === "function" && define.amd) {
+    // AMD
+    define([], function() {
+      return (root.ReactFireMixin = factory());
+    });
+  } else if (typeof exports === "object") {
+    // CommonJS
+    module.exports = factory();
+  } else {
+    // Global variables
+    root.ReactFireMixin = factory();
+  }
+}(this, function() {
+  "use strict";
+
 var ReactFireMixin = {
   /********************/
   /*  MIXIN LIFETIME  */
@@ -135,3 +152,6 @@ var ReactFireMixin = {
     return out;
   }
 };
+
+  return ReactFireMixin;
+}));
