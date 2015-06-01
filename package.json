@@ -27,6 +27,7 @@
   "main": "dist/reactfire.js",
   "files": [
     "dist/**",
+    "src/**",
     "LICENSE",
     "README.md",
     "package.json"
